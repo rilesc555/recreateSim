@@ -12,6 +12,9 @@ Simulation::Simulation(std::optional<int> seed)
 
     this->DeltaTime = 0.001;
     this->Time = 0.0;
+
+    Teams.Add("Blue", new Team());
+    Teams.Add("Red", new Team());
 }
 
 Simulation::~Simulation()
