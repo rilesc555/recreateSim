@@ -1,0 +1,4 @@
+class Effector {
+    private:
+    public:
+};

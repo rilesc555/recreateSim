@@ -1,18 +1,20 @@
 #include "../include/asset.h"
 
-asset::asset(/* args */)
+Asset::Asset(/* args */)
 {
 }
 
-asset::~asset()
+Asset::~Asset()
 {
-    delete parent_simulation;
+    delete this->parent_simulation;
 }
 
-simulation* asset::get_parent_simulation() {
+Simulation* Asset::get_parent_simulation() {
     return this->parent_simulation;
 }
 
-void asset::set_parent_simulation(simulation* ParentSimulation) {
+void Asset::set_parent_simulation(Simulation* ParentSimulation) {
     this->parent_simulation = ParentSimulation;
 }
+
+
